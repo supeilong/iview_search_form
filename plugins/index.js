@@ -5,7 +5,7 @@ const components = [SearchForm]
 const install = Vue => {
   if (install.installed) return
   install.installed = true
-  components.map(component => Vue.components(components.name, component))
+  components.map(component => Vue.components(component.name, component))
 }
 
 if (typeof window !== 'undefined' && window.Vue) {
