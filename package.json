@@ -1,15 +1,16 @@
 {
   "name": "iview_search_form",
   "version": "0.1.0",
-  "private": true,
-  "main": "index.js",
-  "files": [
-    "dist",
-    "index.js"
-  ],
+  "private": false,
+  "author": {
+    "name": "supeilong"
+  },
+  "main": "dist/iview_search_form.umd.min.js",
+  "description": "测试包",
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --inline-vue --name searchForm src/index.js",
+    "build": "vue-cli-service build --target lib --name iview_search_form -dest lib plugins/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
